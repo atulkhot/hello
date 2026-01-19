@@ -1,7 +1,10 @@
 package hello
 
 import (
+	"fmt"
 	"io"
 )
 
-func Print(w io.Writer) {}
+func Print(w io.Writer) {
+	fmt.Fprintln(w, "Hello, world")
+}
